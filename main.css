@@ -1,11 +1,7 @@
-.wrapper {
+/* .wrapper {
     display: flex;
     flex-direction: row;
-}
-@media all and (max-width: 720px) {
-    .wrapper {flex-direction: column;}
-    
-}
+} */
 
 #navbar {
     display: flex;
@@ -13,8 +9,10 @@
     min-width: 285px;
     border:2px solid black;
     font-size: 25px;
+    position: fixed;
 } 
-.nav__header {
+
+.header {
     padding-top: 10px;
 }
 
@@ -25,11 +23,29 @@
     border-top: 1px solid black;
 }
 
+#navbar a:hover {
+    font-weight: bold;
+}
+
 #main-doc {
     border:2px solid black;
     font-size: 18px;
+    margin-left: 351px;
+    padding: 8px;
 }
 
-code {
+@media all and (max-width: 720px) {
+    /* .wrapper {flex-direction: column;} */
+    #main-doc {
+        margin-left: 0px; 
+        
+    }
+    #navbar {
+        position: relative;
+    }
+
+}
+
+code, code ol li {
     background-color: lightgrey;
 }

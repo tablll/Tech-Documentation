@@ -12,16 +12,16 @@
 <body>
     <div class="wrapper">
         <nav id='navbar'>
-            <header class="nav__header">
+            <header class="header">
                 <h1>FLEXBOX LAYOUT</h1>
             </header>
-            <a href="#Why_Flexbox?">Why Flexbox?</a>
-            <a href="#An_aside_on_the_flex_model">An aside on the flex model</a>
-            <a href="#Columns_or_rows?">Columns or rows?</a>
-            <a href="#flex-flow_shorthand">flex-flow shorthand</a>
-            <a href="#flex:_shorthand_versus_longhand">flex: shorthand versus longhand</a>
-            <a href="#Ordering_flex_items">Ordering flex items</a>
-            <a href="#Reference">Reference</a>
+            <a href="#Why_Flexbox?" class="nav-link">Why Flexbox?</a>
+            <a href="#An_aside_on_the_flex_model" class="nav-link">An aside on the flex model</a>
+            <a href="#Columns_or_rows?" class="nav-link">Columns or rows?</a>
+            <a href="#flex-flow_shorthand" class="nav-link">flex-flow shorthand</a>
+            <a href="#flex:_shorthand_versus_longhand" class="nav-link">flex: shorthand versus longhand</a>
+            <a href="#Ordering_flex_items" class="nav-link">Ordering flex items</a>
+            <a href="#Reference" class="nav-link">Reference</a>
         </nav>
         <main id='main-doc'>
             <section class="main-section" id='Why_Flexbox?'>
@@ -146,12 +146,12 @@
                     The code for this is simple: try adding the following CSS to your button bar example code:
                 </p>
                 <code>
-                            <ol>
-                                <li>button:first-child {</li>
-                                <li>  order: 1;</li>
-                                <li>}</li>
-                            </ol>
-                        </code>
+                         <ol>
+                             <li>button:first-child {</li>
+                             <li>  order: 1;</li>
+                             <li>}</li>
+                        </ol>
+                 </code>
                 <p>Refresh, and you'll now see that the "Smile" button has moved to the end of the main axis. Let's
                     talk
                     about how this works in a bit more detail:</p>
@@ -174,11 +174,13 @@
                     could make the "Blush" button appear at the start of the main axis using the following rule:
                 </p>
 
-                <ol>
-                    <li>button:last-child {</li>
-                    <li> order: -1;</li>
-                    <li>}</li>
-                </ol>
+                <code>
+                    <ol>
+                        <li>button:last-child {</li>
+                        <li> order: -1;</li>
+                        <li>}</li>
+                    </ol>
+                </code>
 
             </section>
             <section class="main-section" id='Reference'>
